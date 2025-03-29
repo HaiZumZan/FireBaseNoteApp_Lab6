@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "335679828961",
+    "firebase_url": "https://crud-firebase-ae8fb-default-rtdb.firebaseio.com",
+    "project_id": "crud-firebase-ae8fb",
+    "storage_bucket": "crud-firebase-ae8fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335679828961:android:ef69a3705e784aa0eb18a0",
+        "android_client_info": {
+          "package_name": "com.example.baigiuaki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADdtaYQAfQwlqFXyJvKI4A0_OQMMdHyE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335679828961:android:0922d5dd18d23877eb18a0",
+        "android_client_info": {
+          "package_name": "com.example.crud_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADdtaYQAfQwlqFXyJvKI4A0_OQMMdHyE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335679828961:android:07bf269738a50b51eb18a0",
+        "android_client_info": {
+          "package_name": "com.example.ktgiuaki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADdtaYQAfQwlqFXyJvKI4A0_OQMMdHyE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

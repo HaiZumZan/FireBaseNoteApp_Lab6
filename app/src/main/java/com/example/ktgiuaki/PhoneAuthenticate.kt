@@ -70,7 +70,7 @@ class PhoneAuthenticate : ComponentActivity() {
                                     Text(
                                         // on below line we are specifying
                                         // text to display in top app bar
-                                        text = "GFG",
+                                        text = "Xác thực SĐT",
                                         // on below line we are specifying
                                         // modifier to fill max width
                                         modifier = Modifier.fillMaxWidth(),
@@ -146,7 +146,7 @@ fun firebaseUI(context: Context) {
 
             // on below line we are adding place holder
             // as text as "Enter your course name"
-            placeholder = { Text(text = "Enter your phone number") },
+            placeholder = { Text(text = "Nhập số điện thoại") },
 
             // on below line we are adding modifier to it
             // and adding padding to it and filling max width
@@ -171,7 +171,7 @@ fun firebaseUI(context: Context) {
             onClick = {
                 // on below line we are validating user inputs
                 if (TextUtils.isEmpty(phoneNumber.value.toString())) {
-                    Toast.makeText(context, "Please enter phone number..", Toast.LENGTH_SHORT)
+                    Toast.makeText(context, "Vui lòng nhập số điện thoại...", Toast.LENGTH_SHORT)
                         .show()
                 } else {
 
@@ -187,7 +187,7 @@ fun firebaseUI(context: Context) {
                 .padding(16.dp)
         ) {
             // on below line we are adding text for our button
-            Text(text = "Generate OTP", modifier = Modifier.padding(8.dp))
+            Text(text = "Gửi mã OTP", modifier = Modifier.padding(8.dp))
         }
 
         // adding spacer on below line.
@@ -206,7 +206,7 @@ fun firebaseUI(context: Context) {
 
             // on below line we are adding place holder
             // as text as "Enter your course duration"
-            placeholder = { Text(text = "Enter your otp") },
+            placeholder = { Text(text = "Nhập mã OTP") },
 
             // on below line we are adding modifier to it
             // and adding padding to it and filling max width
@@ -234,7 +234,7 @@ fun firebaseUI(context: Context) {
                 // user input parameters.
                 if (TextUtils.isEmpty(otp.value.toString())) {
                     // displaying toast message on below line.
-                    Toast.makeText(context, "Please enter otp..", Toast.LENGTH_SHORT)
+                    Toast.makeText(context, "Vui lòng nhập mã OTP...", Toast.LENGTH_SHORT)
                         .show()
                 } else {
                     // on below line generating phone credentials.
@@ -258,7 +258,7 @@ fun firebaseUI(context: Context) {
                 .padding(16.dp)
         ) {
             // on below line we are adding text for our button
-            Text(text = "Verify OTP", modifier = Modifier.padding(8.dp))
+            Text(text = "Xác minh mã OTP", modifier = Modifier.padding(8.dp))
         }
 
         // on below line adding spacer.
@@ -276,14 +276,14 @@ fun firebaseUI(context: Context) {
         override fun onVerificationCompleted(p0: PhoneAuthCredential) {
             // on below line updating message
             // and displaying toast message
-            message.value = "Verification successful"
-            Toast.makeText(context, "Verification successful..", Toast.LENGTH_SHORT).show()
+            message.value = "Xác minh thành công"
+            Toast.makeText(context, "Xác minh thành công, đang chuyển hướng", Toast.LENGTH_SHORT).show()
         }
 
         override fun onVerificationFailed(p0: FirebaseException) {
             // on below line displaying error as toast message.
-            message.value = "Fail to verify user : \n" + p0.message
-            Toast.makeText(context, "Verification failed..", Toast.LENGTH_SHORT).show()
+            message.value = "Xác minh thất bại: \n" + p0.message
+            Toast.makeText(context, "Xác minh thất bại, đang thoát ứng dụng", Toast.LENGTH_SHORT).show()
         }
 
         override fun onCodeSent(verificationId: String, p1: ForceResendingToken) {
